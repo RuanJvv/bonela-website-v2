@@ -7,11 +7,11 @@ import { siteConfig } from "../siteConfig"
 
 export const metadata: Metadata = {
     title: "Contact Us",
-    description: "Get in touch with Bonela Consulting for professional people solutions. Request a consultation, quote, or discuss your specific training and development needs. We're here to help transform your organization.",
+    description: "Get in touch with Bonela Consulting for professional people solutions. Request a consultation or discuss your specific training and development needs. We're here to help transform your organization.",
     keywords: [
         ...siteConfig.keywords,
         "contact Bonela Consulting",
-        "get quote",
+        "get consultation",
         "consultation request",
         "training inquiry",
         "assessment booking",
@@ -107,7 +107,7 @@ export default function ContactPage() {
                         {/* Contact Form */}
                         <div className="bg-white p-8 rounded-xl shadow-lg">
                             <h2 className="text-2xl font-semibold text-gray-900 mb-6">
-                                Get a Quote
+                                Request a Consultation
                             </h2>
 
                             {submitStatus === 'success' && (
