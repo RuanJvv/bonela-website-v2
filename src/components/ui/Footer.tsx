@@ -183,7 +183,7 @@ const Footer = () => {
               <div className="text-sm text-gray-700 lg:text-right">
                 <div className="font-medium">&copy; {CURRENT_YEAR} Bonela Consulting</div>
                 <div className="text-xs text-gray-500 mt-1">Level-2 B-BBEE People Solutions Company</div>
-                <div className="text-xs text-gray-500 mt-1 italic">"Where people and technology meet."</div>
+                <div className="text-xs text-gray-500 mt-1 italic">&ldquo;Where people and technology meet.&rdquo;</div>
               </div>
             </div>
           </div>

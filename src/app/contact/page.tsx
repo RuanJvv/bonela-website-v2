@@ -39,7 +39,7 @@ export default function ContactPage() {
                 service: '',
                 message: ''
             })
-        } catch (error) {
+        } catch {
             setSubmitStatus('error')
         } finally {
             setIsSubmitting(false)
@@ -75,7 +75,7 @@ export default function ContactPage() {
                             {submitStatus === 'success' && (
                                 <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
                                     <p className="text-green-800">
-                                        Thank you for your message! We'll get back to you within 24 hours.
+                                        Thank you for your message! We&rsquo;ll get back to you within 24 hours.
                                     </p>
                                 </div>
                             )}
@@ -212,7 +212,7 @@ export default function ContactPage() {
                                     Get in Touch
                                 </h2>
                                 <p className="text-lg text-gray-600 mb-8">
-                                    We're here to help you transform your people and organization.
+                                    We&rsquo;re here to help you transform your people and organization.
                                     Reach out to us through any of the following channels:
                                 </p>
                             </div>

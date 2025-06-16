@@ -108,7 +108,7 @@ export function CallToAction() {
           </div>
 
           <p className="mt-4 text-sm text-gray-500 italic">
-            "Where people and technology meet."
+            &ldquo;Where people and technology meet.&rdquo;
           </p>
         </div>
 

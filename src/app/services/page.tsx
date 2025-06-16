@@ -72,7 +72,7 @@ export default function ServicesPage() {
                             What Sets Bonela Apart
                         </h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            We don't just deliver training – we create transformation through strategic, research-backed solutions.
+                            We don&rsquo;t just deliver training – we create transformation through strategic, research-backed solutions.
                         </p>
                     </div>
 
@@ -96,7 +96,7 @@ export default function ServicesPage() {
                             {
                                 icon: RiTrophyLine,
                                 title: "Experienced Facilitators",
-                                description: "Expert facilitators focused on the 'how', not just the 'what' – ensuring practical application and lasting change."
+                                description: "Expert facilitators focused on the &lsquo;how&rsquo;, not just the &lsquo;what&rsquo; – ensuring practical application and lasting change."
                             },
                             {
                                 icon: RiBrainLine,
@@ -276,7 +276,7 @@ export default function ServicesPage() {
 
                                 <div className="mt-6 p-4 bg-blue-50 rounded-lg">
                                     <p className="text-sm text-blue-800">
-                                        <strong>Our Approach:</strong> We don't just identify problems – we partner with you to implement sustainable solutions that create lasting organizational change.
+                                        <strong>Our Approach:</strong> We don&rsquo;t just identify problems – we partner with you to implement sustainable solutions that create lasting organizational change.
                                     </p>
                                 </div>
                             </div>
@@ -370,7 +370,7 @@ export default function ServicesPage() {
                                     </h2>
                                 </div>
                                 <p className="text-lg text-gray-600 mb-6">
-                                    When off-the-shelf solutions aren't enough, we create bespoke organizational and talent development programs designed specifically for your unique business context, challenges, and strategic objectives.
+                                    When off-the-shelf solutions aren&rsquo;t enough, we create bespoke organizational and talent development programs designed specifically for your unique business context, challenges, and strategic objectives.
                                 </p>
 
                                 <div className="space-y-4">

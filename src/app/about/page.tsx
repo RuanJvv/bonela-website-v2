@@ -92,7 +92,7 @@ export default function AboutPage() {
                         Our Mission & Philosophy
                     </h2>
                     <blockquote className="text-2xl text-gray-700 font-medium mb-8">
-                        "Where people and technology meet."
+                        &ldquo;Where people and technology meet.&rdquo;
                     </blockquote>
                     <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
                         We exist to bridge the gap between human potential and technological advancement, creating solutions that empower people to thrive in an ever-evolving world. Our mission is to transform individuals and teams across Africa through evidence-based, practical solutions that create lasting behavioral change and organizational excellence.
@@ -155,7 +155,7 @@ export default function AboutPage() {
                             {
                                 icon: RiTrophyLine,
                                 title: "Experienced Facilitators",
-                                description: "Expert facilitators focused on the 'how', not just the 'what' – ensuring practical application, skill transfer, and lasting behavioral change."
+                                description: "Expert facilitators focused on the &lsquo;how&rsquo;, not just the &lsquo;what&rsquo; – ensuring practical application, skill transfer, and lasting behavioral change."
                             },
                             {
                                 icon: RiBrainLine,
@@ -420,7 +420,7 @@ export default function AboutPage() {
                     </div>
                     <div className="text-gray-400 text-sm">
                         <p>📧 info@bonelaconsulting.com • 🌐 www.bonelaconsulting.com</p>
-                        <p className="mt-2">"Where people and technology meet."</p>
+                        <p className="mt-2">&ldquo;Where people and technology meet.&rdquo;</p>
                     </div>
                 </div>
             </section>
