@@ -1,5 +1,48 @@
 import { RiBrainLine, RiCheckLine, RiGlobalLine, RiHeartLine, RiPresentationLine, RiShieldCheckLine, RiTeamLine, RiTrophyLine } from "@remixicon/react"
+import { Metadata } from "next"
 import Image from "next/image"
+import { siteConfig } from "../siteConfig"
+
+export const metadata: Metadata = {
+    title: "Our Services",
+    description: "Explore Bonela Consulting's comprehensive services: 80+ People Development Workshops, Organisational Effectiveness Interventions, and HPCSA-compliant Psychometric Assessments. Professional, competitively priced solutions across Africa.",
+    keywords: [
+        ...siteConfig.keywords,
+        "consulting services",
+        "80+ courses",
+        "workshop delivery",
+        "virtual training",
+        "blended learning",
+        "leadership development",
+        "management training",
+        "Microsoft Office training",
+        "team effectiveness",
+        "personality assessments",
+        "cognitive ability testing",
+        "job fit analysis",
+        "custom solutions"
+    ],
+    openGraph: {
+        title: "Professional Consulting Services - Bonela Consulting",
+        description: "80+ People Development Workshops, Organisational Effectiveness Interventions, and HPCSA-compliant Psychometric Assessments delivered across Africa.",
+        url: `${siteConfig.url}/services`,
+        images: [
+            {
+                url: siteConfig.ogImage,
+                width: 1200,
+                height: 630,
+                alt: "Bonela Consulting Services - Professional Development Solutions"
+            }
+        ]
+    },
+    twitter: {
+        title: "Professional Consulting Services - Bonela Consulting",
+        description: "80+ People Development Workshops, Organisational Effectiveness Interventions, and HPCSA-compliant Psychometric Assessments."
+    },
+    alternates: {
+        canonical: `${siteConfig.url}/services`
+    }
+}
 
 export default function ServicesPage() {
     return (

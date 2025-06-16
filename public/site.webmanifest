@@ -1,0 +1,32 @@
+{
+    "name": "Bonela Consulting (Pty) Ltd",
+    "short_name": "Bonela Consulting",
+    "description": "Level-2 B-BBEE People Solutions company specializing in People-Skills Development, Organisational Effectiveness Interventions, and Occupational Psychometric Assessments across Africa.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#f97316",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/images/bonela-icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/favicon.ico",
+            "sizes": "16x16 32x32",
+            "type": "image/x-icon"
+        }
+    ],
+    "categories": [
+        "business",
+        "consulting",
+        "education",
+        "productivity"
+    ],
+    "lang": "en-ZA",
+    "scope": "/",
+    "id": "bonela-consulting"
+}

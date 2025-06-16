@@ -1,5 +1,42 @@
 import { RiAwardLine, RiBrainLine, RiFocusLine, RiGlobalLine, RiHeartLine, RiLightbulbLine, RiPresentationLine, RiShieldCheckLine, RiStarLine, RiTeamLine, RiTrophyLine } from "@remixicon/react"
+import { Metadata } from "next"
 import Image from "next/image"
+import { siteConfig } from "../siteConfig"
+
+export const metadata: Metadata = {
+    title: "About Us",
+    description: "Learn about Bonela Consulting - a Level-2 B-BBEE People Solutions company with local pride and global intelligence. Discover our mission, philosophy, and what sets us apart in transforming individuals and teams across Africa.",
+    keywords: [
+        ...siteConfig.keywords,
+        "about Bonela Consulting",
+        "company mission",
+        "South African consulting",
+        "people transformation",
+        "business philosophy",
+        "professional standards",
+        "company values"
+    ],
+    openGraph: {
+        title: "About Bonela Consulting - People Solutions Company",
+        description: "A truly South African company blending local pride with global intelligence to deliver sustainable people solutions that create lasting transformation.",
+        url: `${siteConfig.url}/about`,
+        images: [
+            {
+                url: siteConfig.ogImage,
+                width: 1200,
+                height: 630,
+                alt: "About Bonela Consulting - Our Mission and Values"
+            }
+        ]
+    },
+    twitter: {
+        title: "About Bonela Consulting - People Solutions Company",
+        description: "A truly South African company blending local pride with global intelligence to deliver sustainable people solutions."
+    },
+    alternates: {
+        canonical: `${siteConfig.url}/about`
+    }
+}
 
 export default function AboutPage() {
     return (
