@@ -1,5 +1,6 @@
 'use client'
 
+import { Turnstile } from '@marsidev/react-turnstile'
 import { RiGlobalLine, RiMailLine, RiMapPinLine, RiSendPlaneLine } from "@remixicon/react"
 import { useState } from "react"
 
@@ -15,6 +16,7 @@ export default function ContactPage() {
 
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+    const [turnstileToken, setTurnstileToken] = useState('')
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         setFormData(prev => ({
@@ -27,18 +29,41 @@ export default function ContactPage() {
         e.preventDefault()
         setIsSubmitting(true)
 
+        if (!turnstileToken) {
+            setSubmitStatus('error')
+            setIsSubmitting(false)
+            return
+        }
+
         // Simulate form submission
         try {
-            await new Promise(resolve => setTimeout(resolve, 1000))
-            setSubmitStatus('success')
-            setFormData({
-                name: '',
-                email: '',
-                company: '',
-                phone: '',
-                service: '',
-                message: ''
+            // In a real implementation, you would send the turnstileToken to your backend
+            // for verification before processing the form
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    ...formData,
+                    turnstileToken
+                })
             })
+
+            if (response.ok) {
+                setSubmitStatus('success')
+                setFormData({
+                    name: '',
+                    email: '',
+                    company: '',
+                    phone: '',
+                    service: '',
+                    message: ''
+                })
+                setTurnstileToken('')
+            } else {
+                setSubmitStatus('error')
+            }
         } catch {
             setSubmitStatus('error')
         } finally {
@@ -48,7 +73,6 @@ export default function ContactPage() {
 
     return (
         <main className="relative mx-auto flex flex-col">
-            {/* Hero Section */}
             <section className="pt-32 pb-16 px-4 xl:px-0">
                 <div className="mx-auto max-w-6xl text-center">
                     <h1 className="text-5xl font-semibold tracking-tighter text-gray-900 sm:text-6xl mb-6">
@@ -61,12 +85,10 @@ export default function ContactPage() {
                 </div>
             </section>
 
-            {/* Contact Form & Info */}
             <section className="py-16 px-4 xl:px-0">
                 <div className="mx-auto max-w-6xl">
                     <div className="grid lg:grid-cols-2 gap-12">
 
-                        {/* Contact Form */}
                         <div className="bg-white p-8 rounded-xl shadow-lg">
                             <h2 className="text-2xl font-semibold text-gray-900 mb-6">
                                 Request a Consultation
@@ -185,9 +207,20 @@ export default function ContactPage() {
                                     />
                                 </div>
 
+                                {/* Cloudflare Turnstile */}
+                                <div>
+                                    <Turnstile
+                                        siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA'}
+                                        onSuccess={setTurnstileToken}
+                                        onError={() => setTurnstileToken('')}
+                                        onExpire={() => setTurnstileToken('')}
+                                        className="flex justify-center"
+                                    />
+                                </div>
+
                                 <button
                                     type="submit"
-                                    disabled={isSubmitting}
+                                    disabled={isSubmitting || !turnstileToken}
                                     className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-orange-600 text-white font-medium rounded-md hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                                 >
                                     {isSubmitting ? (

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Contact Form Submission</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .email-wrapper {
+            width: 100%;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.05);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+            padding: 40px 40px 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .brand {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        .notification-badge {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .intro {
+            font-size: 16px;
+            color: #4b5563;
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+
+        .contact-section {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 32px;
+            position: relative;
+        }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ea580c 0%, #dc2626 100%);
+            border-radius: 12px 12px 0 0;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .contact-item:hover {
+            border-color: #ea580c;
+            box-shadow: 0 4px 12px rgba(234, 88, 12, 0.1);
+        }
+
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            background: #fef3f2;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+
+        .contact-label {
+            font-size: 14px;
+            font-weight: 500;
+            color: #6b7280;
+            min-width: 100px;
+        }
+
+        .contact-value {
+            font-size: 14px;
+            font-weight: 500;
+            color: #1f2937;
+            flex: 1;
+        }
+
+        .contact-value a {
+            color: #ea580c;
+            text-decoration: none;
+        }
+
+        .contact-value a:hover {
+            text-decoration: underline;
+        }
+
+        .service-tag {
+            background: linear-gradient(135deg, #fef3f2 0%, #fee2e2 100%);
+            color: #ea580c;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            border: 1px solid #fecaca;
+        }
+
+        .message-section {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 32px;
+            position: relative;
+        }
+
+        .message-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #3b82f6 0%, #1d4ed8 100%);
+            border-radius: 12px 12px 0 0;
+        }
+
+        .message-content {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            white-space: pre-wrap;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #374151;
+            margin-top: 16px;
+        }
+
+        .timestamp-section {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .timestamp-label {
+            font-size: 12px;
+            font-weight: 500;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .timestamp-value {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .footer {
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+            padding: 32px 40px;
+            text-align: center;
+        }
+
+        .footer-brand {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ea580c;
+            margin-bottom: 8px;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .footer-link {
+            color: #ea580c;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer-note {
+            font-size: 12px;
+            color: #9ca3af;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        @media (max-width: 600px) {
+            .email-wrapper {
+                padding: 20px 10px;
+            }
+
+            .content {
+                padding: 24px 20px;
+            }
+
+            .header {
+                padding: 24px 20px 40px;
+            }
+
+            .contact-section,
+            .message-section {
+                padding: 24px;
+            }
+
+            .footer {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-wrapper">
+        <div class="container">
+            <div class="header">
+                <div class="header-content">
+                    <div class="brand">Bonela Consulting</div>
+                    <div class="tagline">Professional People Solutions</div>
+                    <div class="notification-badge">
+                        <span>●</span>
+                        New Contact Submission
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="intro">
+                    A new inquiry has been submitted through your website contact form. Review the details below and
+                    follow up with the client as appropriate.
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="section-title">
+                        <span>👤</span>
+                        Contact Information
+                    </h3>
+
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon">👤</div>
+                            <div class="contact-label">Name</div>
+                            <div class="contact-value">{{name}}</div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">
+                                <a href="mailto:{{email}}">{{email}}</a>
+                            </div>
+                        </div>
+
+                        {{#if company}}
+                        <div class="contact-item">
+                            <div class="contact-icon">🏢</div>
+                            <div class="contact-label">Company</div>
+                            <div class="contact-value">{{company}}</div>
+                        </div>
+                        {{/if}}
+
+                        {{#if phone}}
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-label">Phone</div>
+                            <div class="contact-value">
+                                <a href="tel:{{phone}}">{{phone}}</a>
+                            </div>
+                        </div>
+                        {{/if}}
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🎯</div>
+                            <div class="contact-label">Service</div>
+                            <div class="contact-value">
+                                <span class="service-tag">{{service}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-section">
+                    <h3 class="section-title">
+                        <span>💬</span>
+                        Client Message
+                    </h3>
+                    <div class="message-content">{{message}}</div>
+                </div>
+
+                <div class="timestamp-section">
+                    <div class="timestamp-label">Submitted</div>
+                    <div class="timestamp-value">{{submittedAt}}</div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-brand">Bonela Consulting</div>
+                <div class="footer-text">
+                    Transforming People & Organizations Across Africa<br>
+                    <a href="https://www.bonelaconsulting.com" class="footer-link">www.bonelaconsulting.com</a>
+                </div>
+                <div class="footer-note">
+                    This notification was automatically generated from your website contact form.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
