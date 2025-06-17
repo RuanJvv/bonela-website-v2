@@ -25,8 +25,8 @@ export const siteConfig = {
   company: {
     name: "Bonela Consulting (Pty) Ltd",
     email: "info@bonelaconsulting.com",
-    phone: "+27 (0) 11 123 4567", // Update with actual phone
-    address: "South Africa", // Update with actual address
+    phone: "+27 (0) 11 123 4567",
+    address: "South Africa",
     registration: "Level-2 B-BBEE People Solutions Company"
   },
   social: {

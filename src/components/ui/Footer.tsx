@@ -1,5 +1,7 @@
 import {
+  RiCupFill,
   RiFacebookFill,
+  RiHeartFill,
   RiLinkedinFill,
   RiMailFill,
   RiTwitterXFill,
@@ -189,8 +191,12 @@ const Footer = () => {
 
             {/* Developer Credit - Full Width */}
             <div className="text-center mt-8 pt-6 border-t border-gray-200">
-              <div className="text-sm text-gray-400">
-                <span className="font-medium">Developed by </span>
+              <div className="text-sm text-gray-400 flex items-center justify-center gap-1">
+                <span className="font-medium">Crafted with</span>
+                <RiHeartFill className="size-3 text-gray-900" />
+                <span className="font-medium">and</span>
+                <RiCupFill className="size-3 text-gray-900" />
+                <span className="font-medium">by</span>
                 <Link
                   href="https://inventixx.com"
                   target="_blank"
