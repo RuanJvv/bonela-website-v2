@@ -131,7 +131,7 @@ export default function AboutPage() {
                             What Sets Bonela Apart
                         </h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            We don't just deliver training – we create transformation. Our unique approach combines strategic thinking, research-backed methodologies, and deep understanding of local contexts to deliver solutions that create lasting change.
+                            We don&rsquo;t just deliver training – we create transformation. Our unique approach combines strategic thinking, research-backed methodologies, and deep understanding of local contexts to deliver solutions that create lasting change.
                         </p>
                     </div>
 
@@ -402,7 +402,7 @@ export default function AboutPage() {
                         Ready to Transform Your Organization?
                     </h2>
                     <p className="text-lg text-gray-300 mb-8">
-                        Let's discuss how our comprehensive people solutions, professional expertise, and strategic approach can create lasting transformation in your organization.
+                        Let&rsquo;s discuss how our comprehensive people solutions, professional expertise, and strategic approach can create lasting transformation in your organization.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                         <a
