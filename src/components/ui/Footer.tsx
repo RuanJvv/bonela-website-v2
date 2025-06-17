@@ -186,6 +186,21 @@ const Footer = () => {
                 <div className="text-xs text-gray-500 mt-1 italic">&ldquo;Where people and technology meet.&rdquo;</div>
               </div>
             </div>
+
+            {/* Developer Credit - Full Width */}
+            <div className="text-center mt-8 pt-6 border-t border-gray-200">
+              <div className="text-sm text-gray-400">
+                <span className="font-medium">Developed by </span>
+                <Link
+                  href="https://inventixx.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange-500 hover:text-orange-600 transition-colors duration-200 font-medium"
+                >
+                  Inventixx
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
