@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import { siteConfig } from "../siteConfig"
 
 export const metadata: Metadata = {
-    title: "Contact Us",
+    title: "Bonela | Contact Us",
     description: "Get in touch with Bonela Consulting for professional people solutions. Request a consultation or discuss your specific training and development needs. We're here to help transform your organization.",
     keywords: [
         ...siteConfig.keywords,

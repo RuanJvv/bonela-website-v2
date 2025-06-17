@@ -4,7 +4,7 @@ import Image from "next/image"
 import { siteConfig } from "../siteConfig"
 
 export const metadata: Metadata = {
-    title: "Our Services",
+    title: "Bonela | Our Services",
     description: "Explore Bonela Consulting's comprehensive services: 80+ People Development Workshops, Organisational Effectiveness Interventions, and HPCSA-compliant Psychometric Assessments. Professional, competitively priced solutions across Africa.",
     keywords: [
         ...siteConfig.keywords,

@@ -4,7 +4,7 @@ import Image from "next/image"
 import { siteConfig } from "../siteConfig"
 
 export const metadata: Metadata = {
-    title: "About Us",
+    title: "Bonela |About Us",
     description: "Learn about Bonela Consulting - a Level-2 B-BBEE People Solutions company with local pride and global intelligence. Discover our mission, philosophy, and what sets us apart in transforming individuals and teams across Africa.",
     keywords: [
         ...siteConfig.keywords,

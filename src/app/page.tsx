@@ -8,7 +8,7 @@ import { Metadata } from "next"
 import { siteConfig } from "./siteConfig"
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Bonela | Home",
   description: "Bonela Consulting - Level-2 B-BBEE People Solutions company transforming individuals and teams across Africa through People-Skills Development, Organisational Effectiveness Interventions, and HPCSA-compliant Psychometric Assessments.",
   keywords: [
     ...siteConfig.keywords,
