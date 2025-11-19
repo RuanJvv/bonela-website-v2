@@ -128,6 +128,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${GeistSans.className} min-h-screen overflow-x-hidden scroll-auto bg-gray-50 antialiased selection:bg-orange-100 selection:text-orange-600`}
+        suppressHydrationWarning
       >
         <NavBar />
         {children}

@@ -40,7 +40,7 @@ const Footer = () => {
         { label: "Get a Consultation", href: "/contact" },
         { label: "Service Inquiry", href: "/contact" },
         { label: "Support", href: "/contact" },
-        { label: "Privacy Policy", href: "#" },
+        { label: "Privacy Policy", href: "/privacy" },
         { label: "Terms of Service", href: "#" },
       ],
     },
