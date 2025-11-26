@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Bonela Consulting (Pty) Ltd",
   url: "https://bonelaconsulting.com",
-  description: "Level-2 B-BBEE People Solutions company specializing in People-Skills Development, Organisational Effectiveness Interventions, and Occupational Psychometric Assessments across Africa.",
+  description: "Level-2 B-BBEE People Solutions company specializing in People-Skills Development, Organisational Effectiveness Interventions, and Occupational Psychometric Assessments. Rooted in South Africa, delivering worldwide.",
   keywords: [
     "B-BBEE consulting",
     "people development",

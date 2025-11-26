@@ -5,7 +5,7 @@ import { siteConfig } from "../siteConfig"
 
 export const metadata: Metadata = {
     title: "Bonela |About Us",
-    description: "Learn about Bonela Consulting - a Level-2 B-BBEE People Solutions company with local pride and global intelligence. Discover our mission, philosophy, and what sets us apart in transforming individuals and teams across Africa.",
+    description: "Learn about Bonela Consulting - a Level-2 B-BBEE People Solutions company with local pride and global intelligence. Discover our mission, philosophy, and what sets us apart in transforming individuals and teams worldwide.",
     keywords: [
         ...siteConfig.keywords,
         "about Bonela Consulting",
@@ -58,7 +58,7 @@ export default function AboutPage() {
                                 A truly South African company blending local pride with global intelligence to deliver sustainable people solutions that create lasting transformation.
                             </p>
                             <p className="text-lg text-gray-600 mb-6">
-                                We specialize in transforming individuals and teams across Africa through life-changing learning experiences, delivering competitively priced solutions designed to create measurable impact and sustainable growth.
+                                We specialize in transforming individuals and teams around the world through life-changing learning experiences, delivering competitively priced solutions designed to create measurable impact and sustainable growth.
                             </p>
                             <div className="flex flex-wrap gap-3">
                                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
@@ -95,7 +95,7 @@ export default function AboutPage() {
                         &ldquo;Where people and technology meet.&rdquo;
                     </blockquote>
                     <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-                        We exist to bridge the gap between human potential and technological advancement, creating solutions that empower people to thrive in an ever-evolving world. Our mission is to transform individuals and teams across Africa through evidence-based, practical solutions that create lasting behavioral change and organizational excellence.
+                        We exist to bridge the gap between human potential and technological advancement, creating solutions that empower people to thrive in an ever-evolving world. Our mission is to transform individuals and teams around the world through evidence-based, practical solutions that create lasting behavioral change and organizational excellence.
                     </p>
                     <div className="grid md:grid-cols-3 gap-6 mt-12">
                         <div className="text-center">
@@ -350,7 +350,7 @@ export default function AboutPage() {
                                 <RiTrophyLine className="size-8 text-green-600" />
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-2">Proven Excellence</h3>
-                            <p className="text-gray-600 text-sm">Track record of transforming individuals and teams across Africa through evidence-based solutions.</p>
+                            <p className="text-gray-600 text-sm">Track record of transforming individuals and teams around the world through evidence-based solutions.</p>
                         </div>
 
                         <div className="bg-white p-6 rounded-xl shadow-lg text-center">

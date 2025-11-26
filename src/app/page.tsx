@@ -9,16 +9,16 @@ import { siteConfig } from "./siteConfig"
 
 export const metadata: Metadata = {
   title: "Bonela | Home",
-  description: "Bonela Consulting - Level-2 B-BBEE People Solutions company transforming individuals and teams across Africa through People-Skills Development, Organisational Effectiveness Interventions, and HPCSA-compliant Psychometric Assessments.",
+  description: "Bonela Consulting - Level-2 B-BBEE People Solutions company transforming individuals and teams worldwide through People-Skills Development, Organisational Effectiveness Interventions, and HPCSA-compliant Psychometric Assessments.",
   keywords: [
     ...siteConfig.keywords,
     "home page",
-    "people solutions Africa",
+    "people solutions worldwide",
     "transformation consulting",
     "life-changing learning experiences"
   ],
   openGraph: {
-    title: `${siteConfig.name} - Transforming People Across Africa`,
+    title: `${siteConfig.name} - Transforming People Worldwide`,
     description: "Level-2 B-BBEE People Solutions company specializing in People-Skills Development, Organisational Effectiveness, and Psychometric Assessments.",
     url: siteConfig.url,
     images: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     ]
   },
   twitter: {
-    title: `${siteConfig.name} - Transforming People Across Africa`,
+    title: `${siteConfig.name} - Transforming People Worldwide`,
     description: "Level-2 B-BBEE People Solutions company specializing in People-Skills Development, Organisational Effectiveness, and Psychometric Assessments."
   },
   alternates: {

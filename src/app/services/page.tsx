@@ -5,7 +5,7 @@ import { siteConfig } from "../siteConfig"
 
 export const metadata: Metadata = {
     title: "Bonela | Our Services",
-    description: "Explore Bonela Consulting's comprehensive services: 80+ People Development Workshops, Organisational Effectiveness Interventions, and HPCSA-compliant Psychometric Assessments. Professional, competitively priced solutions across Africa.",
+    description: "Explore Bonela Consulting's comprehensive services: 80+ People Development Workshops, Organisational Effectiveness Interventions, and HPCSA-compliant Psychometric Assessments. Professional, competitively priced solutions delivered worldwide.",
     keywords: [
         ...siteConfig.keywords,
         "consulting services",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         title: "Professional Consulting Services - Bonela Consulting",
-        description: "80+ People Development Workshops, Organisational Effectiveness Interventions, and HPCSA-compliant Psychometric Assessments delivered across Africa.",
+        description: "80+ People Development Workshops, Organisational Effectiveness Interventions, and HPCSA-compliant Psychometric Assessments delivered worldwide.",
         url: `${siteConfig.url}/services`,
         images: [
             {
@@ -59,7 +59,7 @@ export default function ServicesPage() {
                         Our Services
                     </h1>
                     <p className="mt-6 max-w-3xl mx-auto text-xl text-gray-600">
-                        A truly South African company blending local pride with global intelligence to deliver sustainable people solutions that transform individuals and teams across Africa through life-changing learning experiences.
+                        A truly South African company blending local pride with global intelligence to deliver sustainable people solutions that transform individuals and teams around the world through life-changing learning experiences.
                     </p>
                 </div>
             </section>
@@ -437,7 +437,7 @@ export default function ServicesPage() {
                                 <RiTrophyLine className="size-8 text-green-600" />
                             </div>
                             <h3 className="text-xl font-semibold text-gray-900 mb-2">Proven Track Record</h3>
-                            <p className="text-gray-600">Transforming individuals and teams across Africa through evidence-based solutions.</p>
+                            <p className="text-gray-600">Transforming individuals and teams around the world through evidence-based solutions.</p>
                         </div>
                     </div>
                 </div>

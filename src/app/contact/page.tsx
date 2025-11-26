@@ -291,7 +291,7 @@ export default function ContactPage() {
                                         <h3 className="font-semibold text-gray-900 mb-1">Location</h3>
                                         <p className="text-gray-600">
                                             South Africa<br />
-                                            Serving clients across Africa
+                                            Serving clients worldwide
                                         </p>
                                     </div>
                                 </div>

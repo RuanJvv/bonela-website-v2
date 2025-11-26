@@ -149,7 +149,7 @@ This project is proprietary software owned by Bonela Consulting.
 
 ---
 
-Built with ❤️ for transforming individuals and teams across Africa.
+Built with ❤️ for transforming individuals and teams around the world.
 
 ## Environment Variables
 

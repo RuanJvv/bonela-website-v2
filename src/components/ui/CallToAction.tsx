@@ -22,7 +22,7 @@ export function CallToAction() {
             Ready to transform your people?
           </h2>
           <p className="mt-4 text-lg text-gray-600 leading-relaxed">
-            As a Level-2 B-BBEE People Solutions company, we blend local South African pride with global intelligence to deliver sustainable, life-changing learning experiences across Africa.
+            As a Level-2 B-BBEE People Solutions company, we blend local South African pride with global intelligence to deliver sustainable, life-changing learning experiences worldwide.
           </p>
 
           {/* Key Differentiators */}

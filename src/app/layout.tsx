@@ -113,7 +113,7 @@ export default function RootLayout({
                 "Organisational Effectiveness Interventions",
                 "Occupational Psychometric Assessments"
               ],
-              "areaServed": "Africa",
+              "areaServed": "Worldwide",
               "knowsAbout": [
                 "Leadership Training",
                 "Management Development",
