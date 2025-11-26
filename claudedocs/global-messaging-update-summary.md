@@ -5,7 +5,7 @@
 
 ## Overview
 
-Updated all website content to reflect that Bonela Consulting delivers services globally while maintaining South African roots and African inspiration. The messaging now emphasizes "Rooted in South Africa, delivering worldwide."
+Updated all website content to reflect that Bonela Consulting delivers services globally while maintaining South African roots and African inspiration. The messaging now consistently uses **"worldwide"** throughout.
 
 ---
 
@@ -30,19 +30,19 @@ Updated all website content to reflect that Bonela Consulting delivers services 
 
 | Line(s) | Original | Updated |
 |---------|----------|---------|
-| 33-34 | `<FadeSpan>Across</FadeSpan> <FadeSpan>Africa</FadeSpan>` | `<FadeSpan>Around</FadeSpan> <FadeSpan>the</FadeSpan> <FadeSpan>World</FadeSpan>` |
+| 33-34 | `<FadeSpan>Across</FadeSpan> <FadeSpan>Africa</FadeSpan>` | `<FadeSpan>Worldwide</FadeSpan>` |
 
 ### Footer Component (`src/components/ui/Footer.tsx`)
 
 | Line(s) | Original | Updated |
 |---------|----------|---------|
-| 141 | "...transforming individuals and teams across Africa..." | "...transforming individuals and teams around the world..." |
+| 141 | "...transforming individuals and teams across Africa..." | "...transforming individuals and teams worldwide..." |
 
 ### Features Component (`src/components/ui/Features.tsx`)
 
 | Line(s) | Original | Updated |
 |---------|----------|---------|
-| 133 | "Transforming individuals and teams across Africa" | "Transforming individuals and teams around the world" |
+| 133 | "Transforming individuals and teams across Africa" | "Transforming individuals and teams worldwide" |
 
 ### Call To Action Component (`src/components/ui/CallToAction.tsx`)
 
@@ -55,9 +55,9 @@ Updated all website content to reflect that Bonela Consulting delivers services 
 | Line(s) | Original | Updated |
 |---------|----------|---------|
 | 8 | "...transforming individuals and teams across Africa." | "...transforming individuals and teams worldwide." |
-| 61 | "...transforming individuals and teams across Africa..." | "...transforming individuals and teams around the world..." |
-| 98 | "...transform individuals and teams across Africa..." | "...transform individuals and teams around the world..." |
-| 353 | "...transforming individuals and teams across Africa..." | "...transforming individuals and teams around the world..." |
+| 61 | "...transforming individuals and teams across Africa..." | "...transforming individuals and teams worldwide..." |
+| 98 | "...transform individuals and teams across Africa..." | "...transform individuals and teams worldwide..." |
+| 353 | "...transforming individuals and teams across Africa..." | "...transforming individuals and teams worldwide..." |
 
 ### Services Page (`src/app/services/page.tsx`)
 
@@ -65,8 +65,8 @@ Updated all website content to reflect that Bonela Consulting delivers services 
 |---------|----------|---------|
 | 8 | "...competitively priced solutions across Africa." | "...competitively priced solutions delivered worldwide." |
 | 27 | "...Psychometric Assessments delivered across Africa." | "...Psychometric Assessments delivered worldwide." |
-| 62 | "...transform individuals and teams across Africa..." | "...transform individuals and teams around the world..." |
-| 440 | "Transforming individuals and teams across Africa..." | "Transforming individuals and teams around the world..." |
+| 62 | "...transform individuals and teams across Africa..." | "...transform individuals and teams worldwide..." |
+| 440 | "Transforming individuals and teams across Africa..." | "Transforming individuals and teams worldwide..." |
 
 ### Contact Page (`src/app/contact/page.tsx`)
 
@@ -90,14 +90,14 @@ Updated all website content to reflect that Bonela Consulting delivers services 
 
 | File | Line(s) | Original | Updated |
 |------|---------|----------|---------|
-| `sendgrid-templates/business-notification.html` | 420 | "Transforming People & Organizations Across Africa" | "Transforming People & Organizations Around the World" |
-| `sendgrid-templates/customer-auto-reply.html` | 644 | "Transforming People & Organizations Across Africa" | "Transforming People & Organizations Around the World" |
+| `sendgrid-templates/business-notification.html` | 420 | "Transforming People & Organizations Across Africa" | "Transforming People & Organizations Worldwide" |
+| `sendgrid-templates/customer-auto-reply.html` | 644 | "Transforming People & Organizations Across Africa" | "Transforming People & Organizations Worldwide" |
 
 ### Documentation (`README.md`)
 
 | Line(s) | Original | Updated |
 |---------|----------|---------|
-| 152 | "Built with love for transforming individuals and teams across Africa." | "Built with love for transforming individuals and teams around the world." |
+| 152 | "Built with love for transforming individuals and teams across Africa." | "Built with love for transforming individuals and teams worldwide." |
 
 ---
 
@@ -107,15 +107,17 @@ Updated all website content to reflect that Bonela Consulting delivers services 
 
 | Context | Original | Updated |
 |---------|----------|---------|
-| Hero headline | "Transforming People Across Africa" | "Transforming People Around the World" |
+| Hero headline | "Transforming People Across Africa" | "Transforming People Worldwide" |
 | Site description | "...across Africa" | "Rooted in South Africa, delivering worldwide" |
-| Email footer | "Across Africa" | "Around the World" |
+| Email footer | "Across Africa" | "Worldwide" |
 
-### Secondary Messaging
+### Consistent Terminology
 
-- **Location context:** "Serving clients across Africa" → "Serving clients worldwide"
-- **Service delivery:** "delivered across Africa" → "delivered worldwide"
-- **Mission statements:** "transform individuals and teams across Africa" → "transform individuals and teams around the world"
+All instances now use **"worldwide"** instead of "around the world" for consistency:
+- "transforming individuals and teams worldwide"
+- "delivering worldwide"
+- "Serving clients worldwide"
+- "delivered worldwide"
 
 ---
 
@@ -133,10 +135,13 @@ The following Africa-related content was intentionally preserved:
 
 ## Verification
 
-All instances of "across Africa" and "Across Africa" have been removed from the codebase. Verified with:
+All instances of "across Africa" and "around the world" have been removed from source files:
 
 ```bash
-grep -ri "across Africa" src/ public/ sendgrid-templates/ README.md
+grep -ri "across Africa" src/ public/ sendgrid-templates/
+# Result: No matches found
+
+grep -ri "around the world" src/ sendgrid-templates/
 # Result: No matches found
 ```
 
@@ -152,7 +157,8 @@ grep -ri "across Africa" src/ public/ sendgrid-templates/ README.md
 
 ## Notes
 
-- The messaging now balances South African pride with global service capability
+- Consistent use of "worldwide" throughout all messaging
+- The messaging balances South African pride with global service capability
 - SEO keywords updated to reflect worldwide service delivery
 - Email templates updated for consistent branding across all customer touchpoints
 - Schema.org structured data updated for search engines

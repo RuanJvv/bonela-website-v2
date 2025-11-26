@@ -30,10 +30,6 @@ export const metadata: Metadata = {
       }
     ]
   },
-  twitter: {
-    title: `${siteConfig.name} - Transforming People Worldwide`,
-    description: "Level-2 B-BBEE People Solutions company specializing in People-Skills Development, Organisational Effectiveness, and Psychometric Assessments."
-  },
   alternates: {
     canonical: siteConfig.url
   }

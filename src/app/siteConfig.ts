@@ -30,9 +30,7 @@ export const siteConfig = {
     registration: "Level-2 B-BBEE People Solutions Company"
   },
   social: {
-    twitter: "@bonelaconsulting", // Update with actual handle
-    linkedin: "bonela-consulting", // Update with actual handle
-    facebook: "bonelaconsulting" // Update with actual handle
+    linkedin: "https://www.linkedin.com/company/bonela-consulting-pty-ltd"
   },
   baseLinks: {
     home: "/",

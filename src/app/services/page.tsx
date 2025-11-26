@@ -35,10 +35,6 @@ export const metadata: Metadata = {
             }
         ]
     },
-    twitter: {
-        title: "Professional Consulting Services - Bonela Consulting",
-        description: "80+ People Development Workshops, Organisational Effectiveness Interventions, and HPCSA-compliant Psychometric Assessments."
-    },
     alternates: {
         canonical: `${siteConfig.url}/services`
     }

@@ -29,10 +29,6 @@ export const metadata: Metadata = {
             }
         ]
     },
-    twitter: {
-        title: "About Bonela Consulting - People Solutions Company",
-        description: "A truly South African company blending local pride with global intelligence to deliver sustainable people solutions."
-    },
     alternates: {
         canonical: `${siteConfig.url}/about`
     }

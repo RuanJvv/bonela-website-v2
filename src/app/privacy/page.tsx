@@ -29,10 +29,6 @@ export const metadata: Metadata = {
             }
         ]
     },
-    twitter: {
-        title: "Privacy Policy - Bonela Consulting",
-        description: "Our commitment to protecting your personal information in accordance with South African data protection laws."
-    },
     alternates: {
         canonical: `${siteConfig.url}/privacy`
     }

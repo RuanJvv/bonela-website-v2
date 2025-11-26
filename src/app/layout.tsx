@@ -43,13 +43,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    creator: siteConfig.social.twitter,
-    images: [siteConfig.ogImage],
-  },
   robots: {
     index: true,
     follow: true,
@@ -104,9 +97,7 @@ export default function RootLayout({
                 "addressLocality": siteConfig.company.address
               },
               "sameAs": [
-                `https://twitter.com/${siteConfig.social.twitter.replace('@', '')}`,
-                `https://linkedin.com/company/${siteConfig.social.linkedin}`,
-                `https://facebook.com/${siteConfig.social.facebook}`
+                siteConfig.social.linkedin
               ],
               "serviceType": [
                 "People-Skills Development",

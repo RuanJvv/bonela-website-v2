@@ -28,10 +28,6 @@ export const metadata: Metadata = {
             }
         ]
     },
-    twitter: {
-        title: "Contact Bonela Consulting - Get Professional Consultation",
-        description: "Ready to transform your people and organization? Contact us for professional consultation and discover how we can help."
-    },
     alternates: {
         canonical: `${siteConfig.url}/contact`
     }

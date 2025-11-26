@@ -1,10 +1,8 @@
 import {
   RiCupFill,
-  RiFacebookFill,
   RiHeartFill,
   RiLinkedinFill,
   RiMailFill,
-  RiTwitterXFill,
 } from "@remixicon/react"
 import Link from "next/link"
 import { BonelaLogo } from "../../../public/BonelaLogo"
@@ -151,31 +149,13 @@ const Footer = () => {
                       <RiMailFill className="size-4" />
                     </Link>
                     <Link
-                      href="#"
+                      href="https://www.linkedin.com/company/bonela-consulting-pty-ltd"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="rounded-sm p-2 text-gray-700 transition-colors duration-200 hover:bg-gray-200 hover:text-gray-900"
                       title="LinkedIn"
                     >
                       <RiLinkedinFill className="size-4" />
-                    </Link>
-                    <Link
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-sm p-2 text-gray-700 transition-colors duration-200 hover:bg-gray-200 hover:text-gray-900"
-                      title="Twitter"
-                    >
-                      <RiTwitterXFill className="size-4" />
-                    </Link>
-                    <Link
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-sm p-2 text-gray-700 transition-colors duration-200 hover:bg-gray-200 hover:text-gray-900"
-                      title="Facebook"
-                    >
-                      <RiFacebookFill className="size-4" />
                     </Link>
                   </div>
                 </div>
