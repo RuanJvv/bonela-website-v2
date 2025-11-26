@@ -59,7 +59,7 @@ export default function ServicesPage() {
                         Our Services
                     </h1>
                     <p className="mt-6 max-w-3xl mx-auto text-xl text-gray-600">
-                        A truly South African company blending local pride with global intelligence to deliver sustainable people solutions that transform individuals and teams around the world through life-changing learning experiences.
+                        A truly South African company blending local pride with global intelligence to deliver sustainable people solutions that transform individuals and teams worldwide through life-changing learning experiences.
                     </p>
                 </div>
             </section>
@@ -437,7 +437,7 @@ export default function ServicesPage() {
                                 <RiTrophyLine className="size-8 text-green-600" />
                             </div>
                             <h3 className="text-xl font-semibold text-gray-900 mb-2">Proven Track Record</h3>
-                            <p className="text-gray-600">Transforming individuals and teams around the world through evidence-based solutions.</p>
+                            <p className="text-gray-600">Transforming individuals and teams worldwide through evidence-based solutions.</p>
                         </div>
                     </div>
                 </div>

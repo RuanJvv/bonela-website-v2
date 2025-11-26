@@ -138,7 +138,7 @@ const Footer = () => {
 
                 <div className="lg:max-w-md">
                   <p className="text-sm text-gray-600 mb-3">
-                    A proudly South African company transforming individuals and teams around the world through life-changing learning experiences and evidence-based people solutions.
+                    A proudly South African company transforming individuals and teams worldwide through life-changing learning experiences and evidence-based people solutions.
                   </p>
 
                   {/* Social Links */}

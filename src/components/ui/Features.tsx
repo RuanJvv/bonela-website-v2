@@ -130,7 +130,7 @@ export default function Features() {
             <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-orange-500" />
           </h2>
           <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl">
-            Transforming individuals and teams around the world
+            Transforming individuals and teams worldwide
           </p>
           <p className="mt-4 text-balance text-gray-700">
             We specialize in People-Skills Development, Organisational Effectiveness Interventions,
